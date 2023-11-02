@@ -2,8 +2,8 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* const numero1 = parseInt(prompt("inserisci un numero 1"))
-   const numero2 = parseInt(prompt("inserisci un numero 2"))
+  /* const numero1 = parseInt(prompt("inserisci un numero"))
+   const numero2 = parseInt(prompt("inserisci un numero"))
 
    let vincitore
 
@@ -15,7 +15,7 @@
   }
    alert (`il numero più grande è ${vincitore}`)
    console.log(vincitore)
-   */
+  */
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -74,23 +74,36 @@ else {
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-/*const spedizione = 10
+/* const spedizione = 10
 let totalShoppingCart = parseInt(prompt("Carrello"))
 
 if (totalShoppingCart > 50) {
-  console.log(`Costo carrello: ${totalShoppingCart}  Spedizione gratuita!`)
+    spedizione = 0
+    console.log(`Il totale da addebitare all'utente è ${totalShoppingCart}€ (Spedizione gratuita).`)
 }
+
 else {
-  console.log(`Aggiungi altri ${51 - totalShoppingCart} per la spedizione gratuita!`)
-}
-*/
+  console.log(`Il totale da addebitare all'utente è ${totalShoppingCart}€ (Costo di spedizione: ${spedizione}€).`)
+} */
+
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* const spedizione = 10
+const sconto = 0.8
+let totalShoppingCart = parseInt(prompt("Carrello"))
+let totaleBlackF = totalShoppingCart * sconto
+
+if (totaleBlackF > 50) {
+    console.log(`Il totale da addebitare all'utente è ${totaleBlackF}€ (Spedizione gratuita).`)
+}
+
+else {
+  console.log(`Il totale da addebitare all'utente è ${totaleBlackF}€ (Costo di spedizione: ${spedizione}€).`)
+} */
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -109,8 +122,15 @@ console.log(insiemeDiNumeri)
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+/* const userInput = prompt("Scrivi qui:")
+function isNumber (value){
+  return !isNaN(value) && isFinite(value);
+}
+if (isNumber(userInput)) {
+  console.log(`${userInput} è un numero.`);
+} else {
+  console.log(`${userInput} non è un numero.`);
+} */
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
@@ -127,17 +147,17 @@ else{
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
+  */
+
+  /*let val = 7
+  if (val < 5) {
+    console.log("Meno di 5");
+  } else if (val < 10) {
+    console.log("Meno di 10");
+  } else {
       console.log("Uguale a 10 o maggiore");
     }
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -158,22 +178,28 @@ me['city'] = "Toronto"
 */
 
 /*delete me['lastName']
-*/
-
+/*
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*me.skills.pop()
+*/
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+/*let myArray = []
+for(let i = 1; i <= 10; i ++)
+myArray.push(i)
+*/
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*let lastNumber = myArray.indexOf(10);
+if (lastNumber !== -1) {
+    myArray[lastNumber] = 100;
+}
+*/
